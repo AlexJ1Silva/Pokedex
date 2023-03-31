@@ -52,46 +52,46 @@ h1{
 
 
 .fire:hover{
-    box-shadow: 0 0 1rem #FF6C53;
+    box-shadow: 0 0 2rem #ff2701;
 }
 .grass:hover{
-    box-shadow: 0 0 1rem #AEFFED;
+    box-shadow: 0 0 2rem #00f3be;
 } 
 .electric:hover{
-    box-shadow: 0 0 1rem #F2FF80;
+    box-shadow: 0 0 2rem #daf300;
 } 
 .water:hover{
-    box-shadow: 0 0 1rem #53D9FF;
+    box-shadow: 0 0 2rem #00c7fe;
 } 
 .ground:hover{
-    box-shadow: 0 0 1rem #DD6F00;
+    box-shadow: 0 0 2rem #ff8000;
 } 
 .rock:hover{
-    box-shadow: 0 0 1rem #BBCAB7;
+    box-shadow: 0 0 2rem #5f9a4e;
 } 
 .fairy:hover{
-    box-shadow: 0 0 1rem #FFAEFD;
+    box-shadow: 0 0 2rem #fc00f7;
 } 
 .poison:hover{
-    box-shadow: 0 0 1rem #C671AA;
+    box-shadow: 0 0 2rem #ff00aa;
 } 
 .bug:hover{
-    box-shadow: 0 0 1rem #7DFF94;
+    box-shadow: 0 0 2rem #00ff2f;
 } 
 .dragon:hover{
-    box-shadow: 0 0 1rem #97b3e6;
+    box-shadow: 0 0 2rem #0050e4;
 } 
 .psychic:hover{
-    box-shadow: 0 0 1rem #5AEFBF;
+    box-shadow: 0 0 2rem #00e89f;
 }
 .flying:hover{
-    box-shadow: 0 0 1rem #CAE2FF;
+    box-shadow: 0 0 2rem #0073ff;
 } 
 .fighting:hover{
-    box-shadow: 0 0 1rem #EEC0B0;
+    box-shadow: 0 0 2rem #e23900;
 } 
 .normal:hover{
-    box-shadow: 0 0 1rem #F5F5F5;
+    box-shadow: 0 0 2rem #F5F5F5;
 } 
 
 
