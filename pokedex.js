@@ -36,11 +36,7 @@ const getPokemons = async (id) => {
 };
 
 const criaPokemonCartas = (poke) => {
-    const cartas = document.createElement('div');
-    cartas.classList.add("borda");
-
-    const borda = document.createElement('div');
-    borda.classList.add("pokemon")
+  
    
     
 
@@ -54,18 +50,21 @@ const criaPokemonCartas = (poke) => {
 
     const cor = tipoCor[type];
 
-   
+    const cartas = document.createElement('div');
+    cartas.classList.add("borda", type);
+    
+    
+
+    const borda = document.createElement('div');
+    borda.classList.add("pokemon")
 
     cartas.style.backgroundColor = cor;
 
- 
-        
-   
-   
+
 
     const pokemonInnerHTML = 
-    ` 
-    <div class="pokemon ${type}">    
+    `
+    <div class="pokemon">    
     <div class="imgContainer">
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png " alt="${name}">
     </div>

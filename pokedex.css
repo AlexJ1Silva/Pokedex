@@ -52,10 +52,8 @@ h1{
 
 
 .fire:hover{
-
     box-shadow: 0 0 1rem #FF6C53;
 }
-
 .grass:hover{
     box-shadow: 0 0 1rem #AEFFED;
 } 
@@ -97,8 +95,6 @@ h1{
 } 
 
 
-
-
 .imgContainer{
     display: flex;
     justify-content: center;    
@@ -113,7 +109,6 @@ h1{
     max-width: 90%;
 
 }
-
 
 
 
