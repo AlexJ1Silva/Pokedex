@@ -56,19 +56,19 @@ h1{
     box-shadow: 0 0 1rem #FF6C53;
 }
 
-grass: "#AEFFED",
-    electric: "#F2FF80",
-    water: "#53D9FF",
-    ground: "#DD6F00",
-    rock: "#BBCAB7",
-    fairy: "#FFAEFD",
-    poison: "#C671AA",
-    bug: "#7DFF94",
-    dragon: "#97b3e6",
-    psychic: "#5AEFBF",
-    flying: "#CAE2FF",
-    fighting: "#EEC0B0",
-    normal: "#F5F5F5",
+.grass:hover "#AEFFED",
+.electric:hover "#F2FF80",
+.water:hover "#53D9FF",
+.ground:hover "#DD6F00",
+.rock:hover "#BBCAB7",
+.fairy: "#FFAEFD",
+.poison: "#C671AA",
+.bug: "#7DFF94",
+.dragon: "#97b3e6",
+.psychic: "#5AEFBF",
+.flying: "#CAE2FF",
+.fighting: "#EEC0B0",
+.normal: "#F5F5F5",
 
 
 
