@@ -9,8 +9,37 @@
     <title>Pokedex</title>
 </head>
 
-<body>
+
     <h1>Pokedex</h1>
+    <div class="carregando">
+        <label>Carregando Pokemons...Aguarde!</a>
+        
+    </div>
+
+    
+    <div class="pesquisa">
+
+        <label>Filtro de pesquisa</a>
+          
+            <select name="pesquisar" id="pesquisar"  onchange={pesquisar()}>
+                <option value="todos">todos</option>
+                <option value="fire">fire</option>
+                <option value="grass">grass</option>
+                <option value="electric">electric</option>
+                <option value="water">water</option>
+                <option value="ground">ground</option>
+                <option value="rock">rock</option>
+                <option value="fairy">fairy</option>
+                <option value="poison">poison</option>
+                <option value="bug">bug</option>
+                <option value="dragon">dragon</option>
+                <option value="psychic">psychic</option>
+                <option value="flying">flying</option>
+                <option value="fighting">fighting</option>
+                <option value="normal">normal</option>
+            </select>
+    </div>
+    
     <div class="pokeContainer" id="pokeContainer">
         
     </div>

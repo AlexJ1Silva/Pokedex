@@ -18,8 +18,24 @@ body{
     justify-content: center;
 }
 
-h1{
+h1{   
+    margin: 10px;  
      letter-spacing: 5px;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.pesquisa span{
+    display: flex;
+    justify-content: center;
+   
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .pokeContainer{
@@ -92,7 +108,12 @@ h1{
 } 
 .normal:hover{
     box-shadow: 0 0 2rem #F5F5F5;
+}
+
+.undefined:hover{
+    box-shadow: 0 0 2rem #F5F5F5;
 } 
+
 
 
 .imgContainer{
@@ -129,5 +150,11 @@ h1{
     margin: 15px 0 7px;
     letter-spacing: 1.5px;
 
+}
+
+.carregando{
+    display: flex;
+    justify-content: center;
+    
 }
 
