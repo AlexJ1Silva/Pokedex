@@ -2,6 +2,7 @@ const pokeContainer = document.querySelector("#pokeContainer");
 const select = document.getElementById("pesquisar");
 const countSpan = document.getElementById("count");
 const barraDeProgresso = document.getElementById('barra-de-progresso');
+const concluido = document.getElementById('concluido');
 const pokemonCount = 1120;
 
 let contador = 0;
@@ -45,6 +46,13 @@ const getPokemons = async (id) => {
   countSpan.innerHTML = contador;
   const percentualConcluido = (contador / 1010) * 100;
   barraDeProgresso.value = percentualConcluido;
+
+if(contador == 1010){
+
+  concluido.innerHTML = 'Concluido';
+}
+
+  
  /*  update(contador); */
   
 };

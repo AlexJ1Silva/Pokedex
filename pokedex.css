@@ -159,8 +159,16 @@ h1{
     /* line-height: 32px */
 }
 
+.carregando span{
+    color: #0075FF;
+}
+
+.corConcluido{
+    color: #10ff4f;
+}
+
 .label{
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .pesquisa{
@@ -168,5 +176,10 @@ h1{
     flex-direction: column;
     align-items: center;
     line-height: 32px
+}
+
+.pesquisa select{
+    text-align: center;
+    width: 15%;
 }
 
