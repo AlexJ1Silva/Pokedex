@@ -154,7 +154,19 @@ h1{
 
 .carregando{
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+    /* line-height: 32px */
+}
+
+.label{
+    padding-bottom: 10px;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 32px
 }
 

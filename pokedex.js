@@ -1,8 +1,14 @@
 const pokeContainer = document.querySelector("#pokeContainer");
 const select = document.getElementById("pesquisar");
-const numeroPokemon = document.getElementById("range");
+const countSpan = document.getElementById("count");
+const barraDeProgresso = document.getElementById('barra-de-progresso');
 const pokemonCount = 1120;
+
+let contador = 0;
+
 let allData = [];
+
+
 const tipoCor = {
   fire: "#FF6C53",
   grass: "#AEFFED",
@@ -35,6 +41,12 @@ const getPokemons = async (id) => {
   const data = await resp.json();
   allData.push(data);
   criaPokemonCartas(data);
+  contador++;
+  countSpan.innerHTML = contador;
+  const percentualConcluido = (contador / 1010) * 100;
+  barraDeProgresso.value = percentualConcluido;
+ /*  update(contador); */
+  
 };
 
 const criaPokemonCartas = (poke) => {
@@ -114,6 +126,23 @@ function pesquisar() {
       criaPokemonCartas(element);
     });
   }
+  
 }
+
+/* function update() {
+
+    var element = document.getElementById("myprogressBar");   
+    var width = 1;
+    var identity = setInterval(scene, 9);
+    function scene() {
+      if (width >= 100) {
+        clearInterval(identity);
+      } else {
+        width++; 
+        element.style.width = width + '%'; 
+        element.innerHTML = width * 1   + '%';
+      }
+    }
+  } */
 
 fetchPokemon();

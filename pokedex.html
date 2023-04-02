@@ -12,14 +12,23 @@
 
     <h1>Pokedex</h1>
     <div class="carregando">
-        <label>Carregando Pokemons...Aguarde!</a>
-        
+        <div class="label"><label>Carregando Pokemons...Aguarde!</a>  
+        </div>
+        <div>
+            <b><span id="count" >0</span></b>
+        </div>
+        <div>
+            <progress id="barra-de-progresso" max="100" value="0"></progress>
+        </div>
+         
     </div>
 
     
     <div class="pesquisa">
-
-        <label>Filtro de pesquisa</a>
+        <div>
+            <label>Filtro de pesquisa</a>
+        </div>
+        
           
             <select name="pesquisar" id="pesquisar"  onchange={pesquisar()}>
                 <option value="todos">todos</option>
