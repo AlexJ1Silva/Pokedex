@@ -40,8 +40,7 @@ const getPokemons = async (id) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
   const resp = await fetch(url);
   const data = await resp.json();
-  allData.push(data);
-  criaPokemonCartas(data);
+  
   contador++;
   countSpan.innerHTML = contador;
   const percentualConcluido = (contador / 1010) * 100;
@@ -50,6 +49,8 @@ const getPokemons = async (id) => {
 if(contador == 1010){
 
   concluido.innerHTML = 'Concluido';
+  allData.push(data);
+  criaPokemonCartas(data);
 }
 
   
