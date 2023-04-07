@@ -30,13 +30,7 @@ h1{
     padding: 10px;
     padding-bottom: 10px;
 }
-.pesquisa span{
-    display: flex;
-    justify-content: center;
-   
-    padding: 10px;
-    padding-bottom: 10px;
-}
+
 
 .pokeContainer{
     display: flex;
