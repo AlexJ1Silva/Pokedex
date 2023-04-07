@@ -3,7 +3,7 @@ const select = document.getElementById("pesquisar");
 const countSpan = document.getElementById("count");
 const barraDeProgresso = document.getElementById('barra-de-progresso');
 const concluido = document.getElementById('concluido');
-const pokemonCount = 1120;
+const pokemonCount = 1010;
 
 let contador = 0;
 
