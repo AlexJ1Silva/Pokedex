@@ -45,13 +45,13 @@ const getPokemons = async (id) => {
   countSpan.innerHTML = contador;
   const percentualConcluido = (contador / 1010) * 100;
   barraDeProgresso.value = percentualConcluido;
-  
+  allData.push(data);
+  criaPokemonCartas(data);
 
 if(contador == 979){
 
   concluido.innerHTML = 'Concluido';
-  allData.push(data);
-  criaPokemonCartas(data);
+  
   
 }
 
