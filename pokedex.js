@@ -25,6 +25,7 @@ const tipoCor = {
   flying: "#CAE2FF",
   fighting: "#EEC0B0",
   normal: "#F5F5F5",
+  dark: "#525252",
 };
 
 const baseTipos = Object.keys(tipoCor);

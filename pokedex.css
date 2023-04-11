@@ -8,7 +8,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-
 body{
 
     background: linear-gradient(to right, rgb(233, 203, 246), #dff);
@@ -66,7 +65,6 @@ h1{
   
 }
 
-
 .fire:hover{
     box-shadow: 0 0 2rem #ff2701;
 }
@@ -110,11 +108,13 @@ h1{
     box-shadow: 0 0 2rem #F5F5F5;
 }
 
+.dark:hover{
+    box-shadow: 0 0 2rem #F5F5F5;
+}
+
 .undefined:hover{
     box-shadow: 0 0 2rem #F5F5F5;
 } 
-
-
 
 .imgContainer{
     display: flex;
@@ -130,8 +130,6 @@ h1{
     max-width: 90%;
 
 }
-
-
 
 .info {
     overflow-wrap: break-word;
@@ -159,8 +157,6 @@ h1{
     
 }
 
-
-
 .carregando span{
     color: #0075FF;
 }
@@ -175,6 +171,7 @@ h1{
 .label{
     padding-bottom: 15px;
 }
+
 .contador{
     display: flex;
     padding-top: 20px;
