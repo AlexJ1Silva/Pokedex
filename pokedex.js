@@ -51,7 +51,6 @@ const getPokemons = async (id) => {
 if(contador == 979){
 
   concluido.innerHTML = 'Concluido';
-
 }
 
   
