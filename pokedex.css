@@ -156,8 +156,10 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* line-height: 32px */
+    
 }
+
+
 
 .carregando span{
     color: #0075FF;
@@ -165,10 +167,24 @@ h1{
 
 .corConcluido{
     color: #10ff4f;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
 }
 
 .label{
     padding-bottom: 15px;
+}
+.contador{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.progresso{
+    display: flex;
+    
+    justify-content: center;
 }
 
 .pesquisa{
