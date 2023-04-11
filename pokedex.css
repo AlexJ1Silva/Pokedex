@@ -111,6 +111,12 @@ h1{
 .dark:hover{
     box-shadow: 0 0 2rem #F5F5F5;
 }
+.steel:hover{
+    box-shadow: 0 0 2rem #9E9E9E;
+}
+.ice:hover{
+    box-shadow: 0 0 2rem #83DFFA;
+}
 
 .undefined:hover{
     box-shadow: 0 0 2rem #F5F5F5;
@@ -125,6 +131,7 @@ h1{
     height: 150px;
 
 }
+
 
 .imgContainer img{
     max-width: 90%;
@@ -194,5 +201,10 @@ h1{
 .pesquisa select{
     text-align: center;
     width: 15%;
+}
+
+.pattern1 {
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 8px 8px;
 }
 

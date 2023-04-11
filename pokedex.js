@@ -26,6 +26,8 @@ const tipoCor = {
   fighting: "#EEC0B0",
   normal: "#F5F5F5",
   dark: "#525252",
+  ice: "#83DFFA",
+  steel: "#9E9E9E",
 };
 
 const baseTipos = Object.keys(tipoCor);
@@ -91,10 +93,14 @@ const criaPokemonCartas = (poke) => {
   cartas.style.backgroundColor = cor;
 
   const pokemonInnerHTML = `
-    <div class="pokemon">    
-    <div class="imgContainer">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png " alt="${name}">
+
+    <div class="pokemon ">
+    
+    <div class="imgContainer  pattern1">
+    
+          <img  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png " alt="${name}">
     </div>
+   
     <div class="info">
         <span class="number">#${id}</span>
         <h3 class="name" >${name}</h3>
