@@ -48,7 +48,7 @@ const getPokemons = async (id) => {
   allData.push(data);
   criaPokemonCartas(data);
 
-if(contador == 979){
+if(contador == pokemonCount){
 
   concluido.innerHTML = 'Concluido';
 }
