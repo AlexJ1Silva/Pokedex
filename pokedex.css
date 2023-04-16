@@ -37,14 +37,30 @@ h1{
     padding-bottom: 10px;
 }
 
-.pokeContainer{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: o auto;
-    max-width: 1200px;
-}
+    @media (max-width: 600px){
+        .pokeContainer{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            margin: o auto;
+            max-width: 1200px;
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 1200px){
+        .pokeContainer{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: o auto;
+            max-width: 1200px;
+            
+        }
+    }
 
 .pokemon{
     
