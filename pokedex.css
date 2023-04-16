@@ -42,22 +42,21 @@ h1{
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             justify-content: space-between;
             margin: o auto;
-            max-width: 1200px;
-            flex-direction: column;
+            
+            
         }
     }
 
-    @media (min-width: 1200px){
+    @media (min-width: 600px){
         .pokeContainer{
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            margin: o auto;
-            max-width: 1200px;
+            
+            justify-content: center;
+           
             
         }
     }
