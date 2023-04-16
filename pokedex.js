@@ -102,7 +102,7 @@ const criaPokemonCartas = (poke) => {
     
     <div class="imgContainer  pattern1">
     
-          <img  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png " alt="${name}">
+          <img class="image-shadow" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png " alt="${name}">
     </div>
    
     <div class="info">
