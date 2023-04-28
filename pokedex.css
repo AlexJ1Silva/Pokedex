@@ -65,10 +65,16 @@ h1{
     
     border-radius: 10px;
     box-shadow: 10px 10px 35px rgba(100,100,100, 2);
-   
     padding: 20px;
     text-align: center;
 }
+
+.idpoke{
+text-align:right;
+    
+}
+
+
 
 .borda{
    
@@ -139,11 +145,13 @@ h1{
 
 .imgContainer{
     display: flex;
-    justify-content: center;    
     background-color: rgba(255,255,255, 0.6);
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    /* width: 150px; */
+    height: 180px;
+    justify-content: space-around;
+    
+  
 
 }
 

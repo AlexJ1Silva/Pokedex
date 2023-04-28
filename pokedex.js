@@ -33,6 +33,8 @@ const tipoCor = {
 
 const baseTipos = Object.keys(tipoCor);
 
+
+
 const fetchPokemon = async () => {
   for (let i = 1; i <= pokemonCount; i++) {
     await getPokemons(i);
@@ -48,11 +50,14 @@ const getPokemons = async (id) => {
   contador++;
   countSpan.innerHTML ='Loading : ' + contador + ' Pokemons';
 
+  //console.log( data);
 
   const percentualConcluido = (contador / pokemonCount) * 100;
   barraDeProgresso.value = percentualConcluido;
   allData.push(data);
   criaPokemonCartas(data);
+
+ 
 
 if(contador == pokemonCount){
 
@@ -68,10 +73,19 @@ if(contador == pokemonCount){
 const criaPokemonCartas = (poke) => {
   const name = poke.name[0].toUpperCase() + poke.name.slice(1).split("-", 1);
 
+  const hp = poke.stats[0].base_stat;
+
+  const atk = poke.stats[1].base_stat;
+
+  const def = poke.stats[2].base_stat;
+
+
+  console.log(poke.stats);
+
   const id = poke.id.toString().padStart(3, "0");
 
   const pokeTipos = poke.types.map((type) => type.type.name);
-  console.log(pokeTipos);
+  //console.log(pokeTipos);
 
   //console.log(value)
   const type = baseTipos.find((type) => pokeTipos.indexOf(type) > -1);
@@ -81,6 +95,10 @@ const criaPokemonCartas = (poke) => {
   poke.types.forEach((e) => {
     tipos = !tipos ? e.type.name : tipos + " / " + e.type.name;
   });
+
+
+
+ 
 
   const cor = tipoCor[type];
 
@@ -94,19 +112,38 @@ const criaPokemonCartas = (poke) => {
   const borda = document.createElement("div");
   borda.classList.add("pokemon");
 
+  
+
   cartas.style.backgroundColor = cor;
 
   const pokemonInnerHTML = `
-
+ 
     <div class="pokemon ">
+    
+    <div class="idpoke">
+    <span class="number">#${id}</span>
+    </div>
     
     <div class="imgContainer  pattern1">
     
           <img class="image-shadow" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png " alt="${name}">
     </div>
-   
+
+
+    
+
     <div class="info">
-        <span class="number">#${id}</span>
+    
+    <span>HP: <b>${hp} </b></span>
+  
+   
+    <span>ATK: <b>${atk} </b></span>
+   
+   
+    <span>DEF: <b>${def} </b></span>
+   
+   
+    </div>
         <h3 class="name" >${name}</h3>
     <div class="small" id="type">Type: <span><b>${tipos}</b></span>
     </div>
