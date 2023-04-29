@@ -2,14 +2,13 @@ const pokeContainer = document.querySelector("#pokeContainer");
 const select = document.getElementById("pesquisar");
 const countSpan = document.getElementById("count");
 const countSpan2 = document.getElementById("count2");
-const barraDeProgresso = document.getElementById('barra-de-progresso');
-const concluido = document.getElementById('concluido');
+const barraDeProgresso = document.getElementById("barra-de-progresso");
+const concluido = document.getElementById("concluido");
 const pokemonCount = 979;
 
 let contador = 0;
 
 let allData = [];
-
 
 const tipoCor = {
   fire: "#FF6C53",
@@ -33,12 +32,9 @@ const tipoCor = {
 
 const baseTipos = Object.keys(tipoCor);
 
-
-
 const fetchPokemon = async () => {
   for (let i = 1; i <= pokemonCount; i++) {
     await getPokemons(i);
-
   }
 };
 
@@ -46,28 +42,22 @@ const getPokemons = async (id) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
   const resp = await fetch(url);
   const data = await resp.json();
-  
-  contador++;
-  countSpan.innerHTML ='Loading : ' + contador + ' Pokemons';
 
-  //console.log( data);
+  contador++;
+  countSpan.innerHTML = "Loading : " + contador + " Pokemons";
+
+  console.log(data);
 
   const percentualConcluido = (contador / pokemonCount) * 100;
   barraDeProgresso.value = percentualConcluido;
   allData.push(data);
   criaPokemonCartas(data);
 
- 
-
-if(contador == pokemonCount){
-
-  concluido.innerHTML = 'Concluido';
-  countSpan.innerHTML = '';
-  barraDeProgresso.value = '';
-  
-}
-
-  
+  if (contador == pokemonCount) {
+    concluido.innerHTML = "Concluido";
+    countSpan.innerHTML = "";
+    barraDeProgresso.value = "";
+  }
 };
 
 const criaPokemonCartas = (poke) => {
@@ -79,8 +69,7 @@ const criaPokemonCartas = (poke) => {
 
   const def = poke.stats[2].base_stat;
 
-
-  console.log(poke.stats);
+  //console.log(poke.stats);
 
   const id = poke.id.toString().padStart(3, "0");
 
@@ -96,10 +85,6 @@ const criaPokemonCartas = (poke) => {
     tipos = !tipos ? e.type.name : tipos + " / " + e.type.name;
   });
 
-
-
- 
-
   const cor = tipoCor[type];
 
   //console.log(cor)
@@ -112,17 +97,15 @@ const criaPokemonCartas = (poke) => {
   const borda = document.createElement("div");
   borda.classList.add("pokemon");
 
-  
-
   cartas.style.backgroundColor = cor;
 
   const pokemonInnerHTML = `
  
     <div class="pokemon ">
     
-    <div class="idpoke">
+    
     <span class="number">#${id}</span>
-    </div>
+   
     
     <div class="imgContainer  pattern1">
     
@@ -134,20 +117,16 @@ const criaPokemonCartas = (poke) => {
 
     <div class="info">
     
-    <span>HP: <b>${hp} </b></span>
+    
+      <span class="hp">HP: <b>${hp} </b></span>
+      <span class="atk">ATK: <b>${atk} </b></span>
+      <span class="def">DEF: <b>${def} </b></span>
+      <span class="spd">SPD: <b>${def} </b></span>
   
-   
-    <span>ATK: <b>${atk} </b></span>
-   
-   
-    <span>DEF: <b>${def} </b></span>
-   
-   
-    </div>
         <h3 class="name" >${name}</h3>
-    <div class="small" id="type">Type: <span><b>${tipos}</b></span>
-    </div>
-    </div>
+        <div class="small" id="type">Type: <span><b>${tipos}</b></span></div>
+      
+      
     </div> `;
 
   cartas.innerHTML = pokemonInnerHTML;
@@ -183,7 +162,6 @@ function pesquisar() {
       criaPokemonCartas(element);
     });
   }
-  
 }
 
 fetchPokemon();

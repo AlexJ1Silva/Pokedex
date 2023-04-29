@@ -69,11 +69,6 @@ h1{
     text-align: center;
 }
 
-.idpoke{
-text-align:right;
-    
-}
-
 
 
 .borda{
@@ -148,7 +143,7 @@ text-align:right;
     background-color: rgba(255,255,255, 0.6);
     border-radius: 50%;
     /* width: 150px; */
-    height: 180px;
+    height: 200px;
     justify-content: space-around;
     
   
@@ -173,17 +168,78 @@ text-align:right;
     padding: 4px;
 }
 
+.statusalinhamento {
+    display: flex;
+   
+}
+
+
 .number{
     background-color: rgba(0, 0, 0, 0.1);
     padding: 2px 13px;
     border-radius: 10px;
     font-size: 0.8rem; 
+    line-height: 50px;
+   
 }
 
 .name{
-    margin: 15px 0 7px;
-    letter-spacing: 1.5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px 13px;
+    border-radius: 10px;
+    font-size: 1rem; 
 
+}
+
+.hp{
+    background-color: rgba(255, 1, 35, 0.795);
+    border-radius: 10px;
+    font-size: 0.6rem; 
+    line-height: 50px;
+    transition: .5s ease;
+    
+}
+
+.hp:hover{
+    box-shadow: 0 0 1rem rgb(255, 1, 35);
+
+}
+
+.atk{
+    background-color: rgba(255, 251, 0, 0.836);
+    border-radius: 10px;
+    font-size: 0.6rem; 
+    line-height: 50px;
+    transition: .5s ease;
+}
+
+.atk:hover{
+    box-shadow: 0 0 1rem rgb(255, 251, 0);
+}
+
+.def{
+
+    background-color: rgba(0, 72, 255, 0.598);
+    border-radius: 10px;
+    font-size: 0.6rem; 
+    line-height: 50px;
+    transition: .5s ease;
+}
+
+.def:hover{
+    box-shadow: 0 0 1rem rgb(0, 72, 255);
+}
+
+.spd{
+    background-color: rgba(0, 217, 255, 0.747);
+    border-radius: 10px;
+    font-size: 0.6rem; 
+    line-height: 50px;
+    transition: .5s ease;
+}
+
+.spd:hover{
+    box-shadow: 0 0 1rem rgb(0, 217, 255);
 }
 
 .carregando{
