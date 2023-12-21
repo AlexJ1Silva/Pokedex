@@ -4,7 +4,7 @@ const countSpan = document.getElementById("count");
 const countSpan2 = document.getElementById("count2");
 const barraDeProgresso = document.getElementById("barra-de-progresso");
 const concluido = document.getElementById("concluido");
-const pokemonCount = 979;
+const pokemonCount = 2000;
 
 let contador = 0;
 
